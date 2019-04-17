@@ -1,1 +1,2 @@
-# Blogulmeu
+# JavaScript
+Learning JavaScript
