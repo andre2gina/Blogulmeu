@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Programarea in JavaScript</title>
+</head>
+<body>
+    <h1>O pagină HTML</h1>
+    <p>Aceasta este o pagină HTML.</p>
+    <p>Ea poate fi deschisă in diferite browsere.</p>
+    <script>
+        var Student = function(nume, cnp, varsta) {
+            this.nume = nume;
+            this.CNP = cnp;
+            this.varsta = varsta;
+            this.daNume = function() {
+                return this.nume;
+            };
+        };
+        var ionescu = new Student('Ionescu Clara', 2890112120121, 26);
+        var pop = new Student('Pop Mircea', 1871013114132, 28);
+        console.log(ionescu);  //  un obiect
+        console.log('numele: ' + pop.daNume());  //  un sir de caractere
+    </script>
+</body>
+</html>

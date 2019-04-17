@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 document</title>
+
+</head>
+<body>
+	<h1>UL</h1>
+		<ul>
+		<li>Primul element</li>
+		<li>Al doilea element</li>
+		<li>Ultimul element</li>
+		</ul>
+		<button>Schimba!</button>
+		<script>
+		 document.querySelector("button").onclick = function(){
+
+		
+			var elUl = document.querySelector('ul');
+			var ulChildren = elUl.children;  
+  			console.log('length: ' + ulChildren.length);  //  afiseaza: length: 3
+ 			console.log(ulChildren[0].nodeName);  //  Afiseaza 'LI'
+  			console.log(ulChildren[0].firstChild.nodeName);  //  Afiseaza '#text'
+  			ulChildren[0].innerHTML = "Primul element din listă.";  //  Inlocuieste textul initial
+  		};
+</script>
+</script>
+</body>
+</html>

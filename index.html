@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Site-uri si aplicatii pentru web</title>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+      <link rel="stylesheet" href="./index_files/stilcurs.css">
+      <script src="./index_files/jquery.min.js.download"></script>
+      <script src="./index_files/bootstrap.min.js.download"></script>
+   </head>
+   <body>
+      <div style="height: 100px;" class="text-center">
+         <h2>Site-uri și aplicații pentru web</h2>
+         <p><span class="glyphicon glyphicon-book"></span> <em>Curs 7</em></p> 
+      </div>
+      <hr>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-9 col-sm-offset-3">  <!--  Titlu coloana 2 -->
+               <a name="top"></a><h2 style="margin: 30px 0 20px 0;">Capitolul 6. JavaScript</h2>
+            </div>
+         </div>  <!-- row -->
+         <div class="row">
+            <div class="col-sm-3">
+               <div id="meniuLateral" class="list-group">
+                  <a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#main" class="list-group-item active">Generalități<span class="badge"><span class="glyphicon glyphicon-menu-right"></span></span></a>
+                  <a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#cod" class="list-group-item">Inserarea codului JavaScript<span class="badge"><span class="glyphicon glyphicon-menu-right"></span></span></a>
+                  <a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#test" class="list-group-item">Testarea codului JavaScript<span class="badge"><span class="glyphicon glyphicon-menu-right"></span></span></a>
+                  <a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#sint" class="list-group-item">Sintaxa limbajului JavaScript<span class="badge"><span class="glyphicon glyphicon-menu-right"></span></span></a>
+                  <a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#vari" class="list-group-item">Variabile<span class="badge"><span class="glyphicon glyphicon-menu-right"></span></span></a>
+                  <a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#obi" class="list-group-item">Obiecte<span class="badge"><span class="glyphicon glyphicon-menu-right"></span></span></a>
+                  <a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#oper" class="list-group-item">Operatori<span class="badge"><span class="glyphicon glyphicon-menu-right"></span></span></a>
+                  <a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#fun" class="list-group-item">Funcții<span class="badge"><span class="glyphicon glyphicon-menu-right"></span></span></a>
+                  <a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#if" class="list-group-item">Scrierea condiţiilor. <em><b>if</b></em><span class="badge"><span class="glyphicon glyphicon-menu-right"></span></span></a>
+                  <a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#rep" class="list-group-item">Instrucţiuni repetitive<span class="badge"><span class="glyphicon glyphicon-menu-right"></span></span></a>
+
+               </div> 
+            </div> <!-- col-sm-3 -->
+            <div class="col-sm-9">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <a name="main"></a><h3 class="panel-title">Generalități</h3>
+                  </div>
+                  <div class="panel-body">
+                     <p>Paginile Web pot conţine pe lângă ansamblul de elemente care formează informaţia afişată şi secvenţe de cod care contribuie la realizarea unor efecte deosebite.  Sunt deja consacrate galeriile de imagini, meniurile derulante sau efectele declanşate cu ajutorul mouse-ului care amplifică senzaţia de interactivitate.  Pentru toate acestea s-a creat JavaScript, un limbaj derivat din C.  Împreună cu HTML5 şi CSS3, JavaScript constituie o componentă esenţială a pregătirii dezvoltatorilor pentru componenta de <em>front-end</em>.</p>
+                     <img src="./index_files/fig1.png" alt="" class="img-responsive center-block poza">
+                     <p>Legat de utilizarea acestui limbaj în crearea paginilor Web, în ultimii ani soluţia programării în JavaScript a fost completată cu cea a utilizării unor biblioteci de funcţii JavaScript predefinite.  Succesul acestora este o consecinţă a evoluţiei din ultimii ani a limbajului JavaScript spre un limbaj de uz general, nelegat neaparat de crearea de efecte în paginile Web.  Din acest motiv, pentru realizarea efectelor dorite, creatorii de pagini Web se orientează cu precădere spre utilizarea funcţiilor dedicate din biblioteci specializate, un exemplu reprezentativ fiind <em>jQuery</em>. </p>
+                     <p>Cunoaşterea limbajului JavaScript pentru realizatorii de pagini web, cel puţin la un nivel de bază, este însă obligatorie deoarece JavaScript şi jQuery sunt inseparabile.  Funcţiile din biblioteca jQuery sunt funcţii JavaScript şi sunt apelate din secvenţe de program scrise în JavaScript.  De altfel, ori de câte ori soluţia oferită de JavaScript este uşor de folosit, aceasta va fi preferată soluţiei oferită de jQuery.  Este bine să nu se evite utilizarea limbajului JavaScript deoarece viteza de rulare a aplicaţiilor ar avea mult de suferit.</p>
+                     <p>Invăţarea limbajului JavaScript nu este posibilă fără cunoştinţe de html şi CSS deoarece, într-o pagină Web, funcţiile JavaScript sunt de regulă destinate manipulării elementelor html şi a regulilor de prezentare codificate în CSS. </p>
+                     <p>Observație: Versiunile actuale ale limbajului JavaScript implementează un standard definit de ECMA (European Computer Manufacturer’s Association) denumit ECMAScript. Ultima versiune a acestui standard este ECMASript 6 (prescurtat ES6 sau ES2015) și a fost lansată în 2015.</p>
+                  </div> <!-- panel body -->
+               </div> <!-- panel  -->
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <a name="cod"></a><h3 class="panel-title">Inserarea secvenţelor de cod JavaScript</h3>
+                  </div>
+                  <div class="panel-body">
+                     <p>Codul JavaScript se rulează în cadrul unui interpretor de comenzi integrat în aplicaţia de navigare în Internet.  Se spune că JavaScript este un limbaj <em>interpretat</em> (spre deosebire de C sau C++ care sunt limbaje compilate).  Limbajele interpretate se mai numesc şi limbaje de scriptare (<em>scripting languages</em>).
+                     </p><p>O aplicaţie Web este însă o aplicaţie în arhitectură client-server, componenta client executată în  aplicaţia de navigare.  Din această perspectivă, JavaScript este limbajul destinat scrierii componentei <em>client</em>. Pentru componenta <em>server</em>, programarea se face frecvent în PHP, un alt limbaj interpretat, care va fi studiat în partea finală a cursului.</p>
+                     <p>Inserarea codului JavaScript într-un document hipertext se realizează în acelaşi mod în care s-au inserat foile de stiluri, respectiv într-un element <em>script</em> sau prin ataşarea unuia sau mai multor fişiere <em>.js</em> care conţin codul aplicației.  Exemplu de utilizare a unui element <em>script</em>:</p>
+                     <pre>   &lt;script&gt;
+      // Se inserează liniile de cod
+   &lt;/script&gt;</pre>
+                     <p>Observaţie:  Dacă un script conţine caractere care necesită utilizarea setului de caractere UTF-8, se poate folosi varianta:</p>
+                     <pre>   &lt;script charset="utf-8"&gt;</pre>
+                     <p>Ataşarea unui fişier care conţine secvenţe scrise în JavaScript se realizează tot printr-un element <em>script</em> căruia i se adaugă atributul <em>src</em>.  Exemplu:</p>
+                     <pre>   &lt;script src="js/program.js"&gt;&lt;/script&gt;</pre>
+                     <p>Observaţie:  Marcajul <em>&lt;script&gt;</em> trebuie să aibă un marcaj pereche, <em>&lt;/script&gt;</em>, chiar dacă se inserează un fişier, deci între cele două marcaje nu se scrie nimic.</p>
+                     <p>Deşi un script JavaScript poate fi inserat oriunde într-un fişier html, există totuşi două locuri în care acesta este inserat cu precădere, respectiv la început, în <em>&lt;head&gt;</em>, sau la sfârşit, înainte de <em>&lt;/body&gt;</em>.  Plasarea unui element <em>&lt;script&gt;</em> la sfârşitul paginii are avantajul că nu afectează sensibil viteza de afişare a acesteia, deoarece browser-ul tratează elementele conţinute în fişierul hipertext în ordine.  Dacă elementul <em>&lt;script&gt;</em> este plasat la început, pagina se va afişa doar după încărcarea fişierului (fişierelor) JavaScript.  Ori dacă este vorba de încărcarea unor biblioteci de funcţii (de exemplu biblioteca <em>jQuery</em>), acestea pot cumula zeci sau sute de kO.</p>
+                     <p>O pagină poate avea mai multe elemente <em>&lt;script&gt;</em>.</p>
+                     <p>Notă: Exemplele de cod care vor urma vor necesita crearea repetată a unor mici pagini web. Pentru a ușura realizarea activităților de acest fel, SublimeText permite definirea unor secvențe de caractere care realizează inserarea în fereastra aplicației a unui cod predefinit.  Pașii care trebuie urmați pentru definirea unei astfel de secvențe sunt următorii:</p>
+                     <ol><li>Într-o fereastră nouă se accesează folosind meniul derulant opțiunea <em>Tools / Developer / New Snippet...</em></li></ol>
+                     <img src="./index_files/fig1a.png" alt="" class="img-responsive center-block poza">
+                     <ol start="2">
+                        <li>Secvența predefinită din exemplul inserat în pagină se înlocuiește cu cea dorită:</li></ol>
+                     <img src="./index_files/fig1b.png" alt="" class="img-responsive center-block poza">
+                     <pre>&lt;snippet&gt;
+    &lt;content&gt;&lt;![CDATA[
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;HTML5 document&lt;/title&gt;
+  &lt;link rel="stylesheet" href="css/stil.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;$1&lt;/h1&gt;
+    &lt;script src="js/script.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+]]&gt;&lt;/content&gt;
+    &lt;tabTrigger&gt;web&lt;/tabTrigger&gt;
+&lt;/snippet&gt;
+                     </pre>
+                     <ol start="3"><li>În continuare se salvează fișierul astfel creat folosind calea implicită accesată de SublimeText în momentul inițierii salvării (Ctrl + S). Extensia fișierului va fi <em>.sublime-snippet</em>, ca în imagine:</li></ol>
+                     <img src="./index_files/fig1c.png" alt="" class="img-responsive center-block poza">
+                     <ol start="4"><li>Se inserează apoi într-o fereastră secvența de cod predefinită. Pentru aceasta se va creea un nou fișier și se va tasta secvența de caractere defită prin marcajul <em>&lt;tabTrigger&gt;</em>, respectiv "<em>web</em>"<em> + Tab</em>.</li></ol>
+                     <p>Rezultat:</p>
+                     <img src="./index_files/fig1d.png" alt="" class="img-responsive center-block poza">
+                     <p>Observație: Pentru ca marcajele HTML să fie imediat recunoscute se va seta natura informației din pagină ca fiind "HTML" selectând în colțul din dreapta-jos al aplicației tipul "Plain Text". Selectarea acestuia provoacă afișarea tuturor tipurilor de conținuturi acceptate de Sublime Text, deci se va putea selecta tipul <em>"HTML"</em>.</p>
+                     <img src="./index_files/fig4.png" alt="" class="img-responsive center-block poza">
+
+                     <p>Exemplu fundamental:</p>
+                     <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Testare JavaScript&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;O pagină HTML&lt;/h1&gt;  
+    &lt;p&gt;Pagina poate fi deschisă în diferite browsere:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Internet Explorer&lt;/li&gt;
+        &lt;li&gt;Google Chrome&lt;/li&gt;
+        &lt;li&gt;Mozilla Firefox&lt;/li&gt;
+        &lt;li&gt;Opera, etc.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;©&lt;script&gt;document.write(new Date().getFullYear());&lt;/script&gt;, Informatică aplicată&lt;/p&gt;
+    &lt;script&gt;
+        alert("Hello World");
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+                     <p>Rezultat:</p>
+                     <img src="./index_files/fig2.png" alt="" class="img-responsive center-block poza">
+                     <img src="./index_files/fig3.png" alt="" class="img-responsive center-block pozaChenar">
+                     <p>În pagina realizată sunt inserate două scripturi.  Unul produce o valoare (anul curent) într-o anumită poziție din pagină iar al doilea, plasat la sfârșit, afișează o fereastră în momentul încheierii încărcării paginii.</p>
+					 
+					 
+                    <br><br>
+                    <div align="center" class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="./index_files/rmPIxtxX2G8.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+                    <br>
+					 
+					 
+                     <br><a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true" style="font-size:40px;color:rgb(36,64,97);"></span>TOP</a>
+                  </div> <!-- panel body -->
+               </div> <!-- panel  -->
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <a name="test"></a><h3 class="panel-title">Testarea codului JavaScript</h3>
+                  </div>
+                  <div class="panel-body">
+                     <p>Pentru testarea şi depanarea codului JavaScript este desigur posibilă afișarea unor mesaje prin apeluri ale funcţiei <em>alert()</em>, ca în exemplul precedent.  Funcţia <em>alert()</em> afişează o ferestră care conţine mesajul trimis ca parametru efectiv.  În mesajul afișat pot fi inserate valori ale unor variabile ale căror valori dorim să le vedem.</p>
+                     <p>Browserele dispun însă de o facilitate importantă legată de depanarea secvenţelor de cod JavaScript, respectiv o consolă în care se pot afişa și chiar modifica valori ale variabilelor aplicației. Afișarea consolei în diferite browser-e se realizează printr-o combinaţie de taste, astfel:</p>
+                     <ul><li>IE9+: Se apasă F12 şi se selectează tab-ul <em>Console</em>;</li>
+                        <li>Google Chrome: F12 sau Ctrl+Shift+J;</li>
+                        <li>Safari:  Ctrl+Alt+I;</li>
+                        <li>Firefox: Ctrl+Shift+K;</li>
+                        <li>Opera: Ctrl+Shift+I.</li></ul>
+                     <p>Scrierea pe consolă din aplicație se realizează folosind funcţia <em>console.log()</em>.</p>
+                     <p>Observaţie:  Din modul de scriere a apelului funcţiei <em>log()</em> se poate deduce că JavaScript este un limbaj orientat pe obiecte.  Folosind terminologia consacrată, <em>log()</em> este o metodă a clasei <em>console</em>.</p>
+                     <p>Metoda <em>log()</em> acceptă unul sau mai mulţi parametrii.  Valorile parametrilor vor fi afişate pe aceeaşi linie, deci dacă afişarea trebuie realizată pe linii distincte metoda <em>log()</em> va trebui apelată în mod repetat.</p>
+                     <p>Observaţie:  La deschidere, consola poate conţine o serie de mesaje. Golirea acesteia se realizează apăsând butonul <img src="./index_files/fig5.png"> de pe bara cu instrumente sau prin selectarea în meniul contextual a opţiunii <em>Clear console</em> (clic cu butonul drept al mouse-ului).</p> 
+                     <img src="./index_files/fig6.png" alt="" class="img-responsive center-block poza">
+                     <p>Exemplu de utilizare a consolei în Google Chrome:</p>
+                     <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+   &lt;meta charset="UTF-8"&gt;
+   &lt;title&gt;Programarea in JavaScript&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;O pagină HTML&lt;/h1&gt;
+    &lt;p&gt;Aceasta este o pagină HTML.&lt;/p&gt;
+    &lt;p&gt;Ea poate fi deschisă în diferite browsere:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Internet Explorer&lt;/li&gt;
+        &lt;li&gt;Mozilla Firefox&lt;/li&gt;
+        &lt;li&gt;Google Chrome&lt;/li&gt;
+        &lt;li&gt;Opera, etc.&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;script&gt;
+        var i = 100;
+        console.log("i = ", i);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+                     <p>După salvarea şi încărcarea documentului în Google Chrome se deschide consola (F12) şi se vede ce a afişat funcţia <em>log()</em> apelată.</p>
+                     <img src="./index_files/fig7.png" alt="" class="img-responsive center-block poza">
+                     
+					 
+					  
+					 
+                    <br><br>
+                    <div align="center" class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="./index_files/sgYaVVdr6Ug.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+                    <br>
+					 
+					 
+					 
+					 
+                     <br><a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true" style="font-size:40px;color:rgb(36,64,97);"></span>TOP</a>
+                  </div> <!-- panel body -->
+               </div> <!-- panel  -->
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <a name="sint"></a><h3 class="panel-title">Sintaxa limbajului JavaScript</h3>
+                  </div>
+                  <div class="panel-body">
+                     <p>Sintaxa limbajului JavaScript a fost preluată din limbajul C.  Regulile de scriere a codului sunt deci similare:</p>
+                     <ul><li>se face distincţie între literele mari şi mici (limbaj <em>case sensitive</em>);</li>
+                        <li>fiecare instrucţiune se va încheia cu ';'.  Ca şi în C, se pot scrie mai multe instrucţiuni pe aceeaşi linie, dar este nerecomandabil.</li>
+                        <li>spaţiile şi taburile nu contează, deci se poate evidenţia structura codului prin indentarea diferitelor blocuri de cod;</li>
+                        <li>blocurile formate din mai multe linii sunt plasate între acolade '{' '}' ;</li>
+                        <li>comentariile în linie încep cu // şi ţin până la sfârşitul linei, iar comentariile pe mai multe linii sunt încadrate între /* şi */, ca în exemplele următoare:</li></ul>
+                     <pre>   // comentariu pe o linie. Linia urmatoare nu mai este comentariu.
+   var i=0;
+   /* comentariu pe mai multe linii
+      care se incheie cu */</pre>
+                     <br><a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true" style="font-size:40px;color:rgb(36,64,97);"></span>TOP</a>
+                  </div> <!-- panel body -->
+               </div> <!-- panel  -->
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <a name="vari"></a><h3 class="panel-title">Variabile</h3>
+                  </div>
+                  <div class="panel-body">
+                     <p>Ca în orice limbaj de programare, variabilele sunt containere folosite pentru a păstra valori.  Pentru a declara o variabilă se foloseşte cuvântul rezervat <em>var</em>.  Declararea unei variabile poate fi cumulată cu iniţializarea ei.  Exemple:</p>
+                     <pre>   var nrLinii = 7;
+   var sumaInt = 12 + 45;
+   var coleg, prieteni;
+   var anul=2014, luna=10, ziua=14;</pre>
+                     <p>În exemplele prezentate primele variabile (<em>nrLinii</em> şi <em>sumaInt</em>) sunt iniţializate în momentul declarării iar următoarele două (<em>coleg</em> şi <em>prieteni</em>) vor fi iniţializate ulterior.  Evident, o variabilă neiniţializată nu poate fi folosită decât după ce primeşte o valoare printr-o atribuire. Până la inițializare o variabilă are tipul <em>undefined</em> (nedefinit).</p>
+                     <p>Denumirea unei variabile începe cu o literă şi poate conţine litere, cifre şi '_' (<em>underscore</em>).  De obicei programatorii folosesc denumiri sugestive, formate prin alăturarea mai multor cuvinte.  Pentru a face inteligibil numele astfel obţinut, cuvintele care îl compun sunt separate prin '_' sau încep cu o literă mare (variantă denumită sugestiv <em>camelCase</em>).</p>
+                     <p>Observaţie:  Cuvântul rezervat <em>var</em> poate lipsi.  Din acest motiv se poate scrie:</p>
+                     <pre>   var x = 120;
+   y = 123;</pre>
+                     <br><p><b>Tipul variabilelor</b></p>
+                     <p>Tipul unei variabile se stabileşte automat, în momentul iniţializării.</p>
+                     <p>În JavaScript sunt definite următoarele tipuri:</p>
+                     <ul><li>Number,</li>
+                        <li>String,</li>
+                        <li>Boolean,</li>
+                        <li>Symbol (începând cu ES2015),</li>
+                        <li>Object,</li>
+                        <li>null și </li>
+                        <li>undefined.</li></ul>
+                     <p>Observație: <em>null</em> diferă de <em>undefined</em> prin faptul că <em>undefined</em> este tipul unei variabile care încă nu a fost inițializată iar <em>null</em> este tipul unei variabile căreia i s-a dat valoarea <em>null</em> cu scopul de a impune <em>lipsa unei valori</em>.</p>
+                     <p>Exemplu:</p>
+                     <pre>   var indice;
+   console.log(typeof indice);  //  Afiseaza pe consolă undefined</pre>
+                     <p><b>a. Tipurile simple</b></p>
+                     <p>În JavaScript <em>'limbaj'</em>, <em>null</em>, <em>undefined</em>, <em>true</em> sau <em>false</em> sunt considerate tipuri simple deoarece ele nu pot fi descompuse în alte elemente.  În lista de tipuri prezentată, cu excepția tipului <em>Object</em> toate sunt tipuri simple.</p>
+                     <p>Observaţie: O variabilă iniţializată poate primi ulterior altă valoare, de acelaşi tip sau având un tip diferit, caz în care îşi modifică automat tipul.  Exemple:</p>
+                     <pre>   var varianta = 7;   //  varianta este de tip <em>Number</em>
+   varianta = "Fructe de pădure";  //  varianta devine String</pre>
+                     <p>Observaţie:  Şirurile de caractere pot fi delimitate atât prin ghilimele ("sir cu ghilimele") cât şi prin caractere apostrof ('sir cu apostrof').</p>
+                     <p><b>b. Şiruri de valori</b></p>
+                     <p>Pe lângă tipurile simple, în JavaScript se pot declara şiruri de valori (eng. <em>arrays</em>) şi obiecte.  Spre deosebire de limbajele puternic tipizate (C++, Java, C# etc.) în JavaScript şirurile de valori pot conţine elemente de diferite tipuri. Exemple:</p>
+                     <pre>   var intregi = [11, 21, 3, 45, 5];  //  sir de intregi, ca în C++
+   var sir = ["Ambasador", 2300, "Functionar", 1800]; //  JavaScript!
+   var nume = ["Ionescu", 1200, "Popa", 3400, "Alexandru", "Oltean"];</pre>
+                     <p>Un element al unui şir de valori (tablou) poate fi accesat folosind indici, astfel:</p>
+                     <pre>   var unNume = nume[2];  //  Popa, pozitia a 3-a</pre>
+                     <p>Ca şi în C, numărarea elementelor începe de la 0.</p>
+                     <p>Pentru a cunoaşte lungimea şirului se poate accesa proprietatea <em>length</em> scriind <em>nume.length</em>, care în cazul dat va returna 6.</p>
+                     <p>Şirurile din JavaScript pot conţine orice valori, inclusiv obiecte sau alte şiruri.</p>
+                     <p>Tablourile bidimensionale se definesc asfel:</p>
+                     <pre>   var rude = [
+      ["Ionescu", "Popa", "Alexandru"],
+      ["23", "12", "34"]
+   ];</pre>
+                     <p>Pentru a accesa elemente dintr-un astfel de tablou se vor folosi doi indici, ca înlimbajul C:</p>
+                     <pre>   nume = rude[0][0]; // Ionescu
+   varsta = rude[1][0]; // 23
+   nr = rude[1][2];     // 34</pre>
+                     <p>Observaţie:  Ca şi în C, rude[0] reprezintă şirul ["Ionescu", "Popa", "Alexandru"] iar rude[1] şirul ["23", "12", "34"].</p>
+                     <p>Pentru a adăuga un element la sfârşitul unui şir se foloseşte funcţia <em>push</em>.  Exemplu:</p>
+                     <pre>   nume.push("Alexandra");</pre>
+                     <p>Ştergerea unui element dintr-un tablou nu este practic posibilă.  Există funcţia <em>delete()</em>, dar apelul ei va şterge doar valoarea, în memorie lungimea şirului rămânând neschimbată.  La afişarea şirului în care o valoare a fost ştearsă, pe poziţia afectată va apărea <em>undefined</em>.  Exemplu:</p>
+                     <img src="./index_files/fig8.png" alt="" class="img-responsive center-block poza">
+                     <p>Observație:  Pentru adăugarea unui element la sfârșitul unui șir, în locul funcției <em>push</em> se poate folosi atribuirea:</p>
+                     <pre>   nume[nume.length] = 'Traian';</pre>
+                     
+					 
+					 
+					  
+					 
+                    <br><br>
+                    <div align="center" class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="./index_files/CT_lNZdh9k8.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+                    <br>
+					 
+
+                     <br><a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true" style="font-size:40px;color:rgb(36,64,97);"></span>TOP</a>
+                  </div> <!-- panel body -->
+               </div> <!-- panel  -->
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <a name="obi"></a><h3 class="panel-title">Obiecte</h3>
+                  </div>
+                  <div class="panel-body">
+                     <p>În JavaScript obiectele pot fi create în mai multe moduri, în funcţie de scopul urmărit.  </p>
+                     <ul><li><b>varianta de definire folosind obiecte constante (literali)</b></li></ul>
+                     <p>Dacă într-un script se doreşte crearea unui obiect complex numai pentru a da un nume comun unui set de valori, se va folosi această variantă.  Exemplu fundamental:</p>
+                     <p>O aplicaţie operează cu persoane.  Dacă se folosesc variabile simple fiecare persoană trebuie să fie definită prin mai multe variabile, astfel:</p>
+                     <pre>   var nume = "Ionescu Clara";
+   var anNastere = 1984;
+   var CNP = "2100484123978";
+   var ocupatie = "studenta";</pre>
+                     <p>Pentru păstrarea celor patru valori se poate însă crea un obiect care să conţină patru câmpuri în care să fie memorate atributele persoanei.  Ca şi în orice alt limbaj care suportă programarea obiectuală, şi în JavaScript un obiect este compus dintr-o mulţime de proprietăţi (câmpuri) având fiecare o denumire şi o valoare.  Folosind notaţia literală se poate crea pentru cazul dat obiectul <em>ionescu</em>:</p>
+                     <pre>   var ionescu = {
+      nume: "Ionescu Clara",
+      anNnastere: 1984,
+      CNP: "2100484123978",
+      ocupatie: 'studenta'
+   };</pre>
+                     <p>Pentru a accesa separat câmpurile unui obiect se poate folosi fie notaţia <em>obiect.nume_câmp</em> fie <em>obiect["nume_câmp"]</em>.  Exemple:</p>
+                     <pre>   var cod = ionescu.CNP;  //  sau
+   var cod = ionescu["CNP"];</pre>
+                     <p>A doua formă de scriere este utilizată cu precădere atunci când numele proprietăţii accesate este păstrat la rândul lui într-o variabilă.  Exemplu:</p>
+                     <pre>   var proprietate = "anNastere";
+   var valoare = persoana[proprietate]; // valoare devine 1984</pre>
+                     <p>Exemplu de şir de obiecte în notaţie literală:</p>
+                     <pre>   var listaActiuni = [
+      {nume: "Cumparat paine", cantitate: 2, gata: false},
+      {nume: "Cumparat flori", cantitate: 1, gata: true},
+      {nume: "Platit taxa parcare", cantitate: 1, gata: false}];</pre>
+                     <p>Observaţie:  Pornind de la notaţia literală, în JavaScript s-a definit reprezentarea obiectelor folosind notaţia <em>JSON</em>.  JSON este o prescurtarea a denumirii <em>JavaScript Object Notation</em>.  Obiectul <em>ionescu</em> în notaţie JSON se scrie astfel:</p>
+                     <pre>   var ionescu = {
+      "nume": "Ionescu Clara",
+      "anNastere": 1984,
+      "CNP": "2840410123978",
+      "ocupatie": 'studenta'
+   };</pre>
+                     <p>Spre deosebire de notația literală, în notația JSON denumirile câmpurilor sunt scrise între ghilimele.  Acest mod de notare se foloseşte pentru memorarea obiectelor în fişiere.  Fișierele conținând obiecte în notație JSON au extensia <em>.json</em> și limbajele actuale conțin clase destinate creării și decodificării acestora.  Fișierele <em>.json</em> se folosesc deja în mod curent ca înlocuitor al fișierelor conținând informații codificate în format XML.</p>
+                     <ul><li><b>varianta de definire folosind folosind constructorul general <em>Object</em></b></li></ul>
+                     <p><em>Object()</em> este o funcţie destinată construirii în mod explicit a unui obiect JavaScript.</p>
+                     <p>Exemplu:</p>
+                     <pre>   var ionescu = Object();  //  sau var ionescu = {};
+   ionescu.nume = 'Ionescu Clara';
+   ionescu.anNastere = 1984;
+   ionescu.CNP = "2840410123978";
+   ionescu.ocupatie = "studenta";
+   ionescu.daNume = function() { return this.nume; };</pre>
+                     <p>Exemplu de utilizare:</p>
+                     <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Programarea in JavaScript&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;O pagină HTML&lt;/h1&gt;
+    &lt;p&gt;Aceasta este o pagină HTML.&lt;/p&gt;
+    &lt;p&gt;Ea poate fi deschisă în diferite browsere:&lt;/p&gt;
+    &lt;script&gt;
+        var ionescu = Object();
+        ionescu.nume = 'Ionescu Clara';
+        ionescu.anNastere = 1984;
+        ionescu.CNP = "2840410123978";
+        ionescu.ocupatie = "studenta";
+        ionescu.daNume = function() {
+            return ionescu.nume; 
+        };
+        console.log(ionescu);
+        console.log('numele:' + ionescu.daNume());
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+                     <p>Rezultat afişat pe consolă:</p>
+                     <img src="./index_files/fig9.png" alt="" class="img-responsive center-block poza">
+                     După declararea obiectului ionescu folosind constructorul general Object(), referirea la componentele (câmpurile) acestuia se realizează folosind operatorul '.' (punct).
+                     <ul><li><b>varianta de definire folosind un constructor propriu</b></li></ul>
+                     <p>Pentru a construi mai multe obiecte de acelaşi fel se poate scrie un constructor, ca în orice limbaj care suportă programarea obiectuală.  Exemplu:</p>
+                     <pre>var Student = function(nume, cnp, varsta) {  // sau function Student(nume, cnp, varsta){
+    this.nume = nume;
+    this.CNP = cnp;
+    this.varsta = varsta;
+    this.daNume = function() {
+        return this.nume;
+    };
+};</pre>
+                     <p>Observaţie: Ca şi în Java, numele noii clase, <em>Student</em>, se scrie cu majusculă iar referirea la variabilele clasei în interiorul constructorului și în interiorul funcțiilor clasei se realizează folosind notaţia <em>this.variabila</em>.</p>
+                     <p>După declararea constructorului pot fi create instanţe ale clasei <em>Student</em>, astfel:</p>
+                     <pre>   var ionescu = new Student('Ionescu Clara', 2840410120121, 26);
+   var pop = new Student('Pop Mircea', 1871013114132, 28);</pre>
+                     <p>Observație: Apelul constructorului se realizează folosind <em>new</em>, ca în C++:</p>
+                     <p>Exemplu de utilizare:</p>
+                     <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Programarea in JavaScript&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;O pagină HTML&lt;/h1&gt;
+    &lt;p&gt;Aceasta este o pagină HTML.&lt;/p&gt;
+    &lt;p&gt;Ea poate fi deschisă in diferite browsere.&lt;/p&gt;
+    &lt;script&gt;
+        var Student = function(nume, cnp, varsta) {
+            this.nume = nume;
+            this.CNP = cnp;
+            this.varsta = varsta;
+            this.daNume = function() {
+                return this.nume;
+            };
+        };
+        var ionescu = new Student('Ionescu Clara', 2890112120121, 26);
+        var pop = new Student('Pop Mircea', 1871013114132, 28);
+        console.log(ionescu);  //  un obiect
+        console.log('numele: ' + pop.daNume());  //  un sir de caractere
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+                     <p>Pe consolă se vor fişa următoarele:</p>
+                     <img src="./index_files/fig10.png" alt="" class="img-responsive center-block poza">
+                     
+					 
+					   
+					 
+                    <br><br>
+                    <div align="center" class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="./index_files/WO-SGwG_K3M.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+                    <br>
+					 
+					 
+					 
+					 
+					 
+                     <br><a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true" style="font-size:40px;color:rgb(36,64,97);"></span>TOP</a>
+                  </div> <!-- panel body -->
+               </div> <!-- panel  -->
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <a name="oper"></a><h3 class="panel-title">Operatori</h3>
+                  </div>
+                  <div class="panel-body">
+                     <p>JavaScript este un limbaj derivat din C, deci operatorii celor două limbaje sunt aceiaşi.</p>
+                     <ul><li>Operatorii aritmetici: +, -, *, /, % (modulo),</li>
+                        <li>Operatorii de atribuire: =, +=, -=, *=, /=, %=</li>
+                        <li>Operatorii de incrementare şi decrementare: ++, --</li>
+                        <li>Operatorul de concatenare a şirurilor (unire), '+'.</li></ul>
+                     <p>Exemplu:</p>
+                     <pre>   var tom = "Thomas";
+   var jerry = "Jerry";
+   var film = tom + " &amp; " + jerry;</pre>
+                     <ul><li>Operatori logici.  Aceştia vor fi prezentaţi ulterior, împreună cu instrucţiunea <em>if</em>.</li></ul>
+
+                     <br><a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true" style="font-size:40px;color:rgb(36,64,97);"></span>TOP</a>
+                  </div> <!-- panel body -->
+               </div> <!-- panel  -->
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <a name="fun"></a><h3 class="panel-title">Funcții</h3>
+                  </div>
+                  <div class="panel-body">
+                     <p>Ca şi în alte limbaje, și în JavaScript se pot defini funcţii.  Ele permit izolarea într-o unitate de program distinctă a unor secvenţe de cod independente din punct de vedere funcţional.  Scopul creării lor este acela de a simplifica scrierea unor secvenţe de prelucrare complexe prin divizarea lor în unităţi mai simple, uşor de depanat, dar şi de a scrie într-un singur loc codul care trebuie executat în diferite locuri într-o aplicaţie.</p>
+                     <p>Crearea unei funcţii se realizează prin declararea ei folosind cuvântul rezervat <em>function</em>.  Corpul funcţiei va fi încadrat între acolade, '{' şi '}'.  Exemplu:</p>
+                     <pre>function scriuPeConsola(mesaj) {
+    console.log(mesaj);
+    console.log("=========================");
+}</pre>
+                     <p>O funcţie se execută atunci când este apelată.  Exemplu:</p>
+                     <pre>   scriuPeConsola("Valorile variabilelor:");</pre>
+                     <p>O funcţie poate avea un număr de parametri formali, plasaţi între paranteze, ca în exemplul următor.</p>
+                     <pre>   function afisezMesaj(nume, mesaj) {
+       //  '+' este operatorul de concatenare
+       console.log(nume + ", " + mesaj);
+   }</pre>
+                     <p>În exemplul dat <em>nume</em> şi <em>mesaj</em> sunt doi parametri formali, care în interiorul funcţiei pot fi folosiţi ca orice variabilă iniţializată în prealabil.  În momentul apelului, parametrii formali primesc valori efective, apelul relizându-se ca în exemplul următor.</p>
+                     <pre>   afisezMesaj(nume, " Parola Dv. este prea simpla!");</pre>
+                     <p>Observaţie:  Dacă numărul de parametri ai funcţiei devine supărător de mare, soluţia este utilizarea ca parametru formal a unui obiect, ca în exemplul următor:</p>
+                     <pre>   afisez("Jack Franklin", 1987, 1871010154145, "designer");</pre>
+                     <p>Funcţia <em>afişez()</em> ar trebui să aibă patru parametri.  În locul acestei soluţii se poate scrie o funcţie cu un parametru, care va fi însă obiect.</p>
+                     <pre>function afisez(pers) {
+   console.log("Numele: " + pers.nume);
+   console.log("Anul nasterii: " + pers.anNastere);
+   console.log("CNP: " + pers.CNP);
+   console.log("Ocupatie: " + pers.ocupatie);
+}
+
+var ionescu = {
+   nume: "Ionescu Clara",
+   anNastere: 1984,
+   CNP: "2840410123978",
+   ocupatie: "studenta"
+}
+
+afisez(ionescu);</pre>
+                     <p>Soluţia prezentată simplifică mult scrierea funcţiilor care operează asupra unui număr mai mare de parametri.  În loc să se gestioneze tipul şi poziţiile în care aceşti parametri apar, se crează un obiect care va fi transmis funcţiei ca unic parametru.</p>
+                     <p>Funcţiile pot returna o valoare.  În acest caz, ultima instrucţiune din funcţie va fi o instrucţiune <em>return</em>.  Exemplu:</p>
+                     <pre>function transform(lungInci) {
+   var cm = lungInci * 2.54;
+   return cm;
+}
+
+var lungimeI = 12;  //  Lungimea in inci
+var lungCm = transform(lungimeI);</pre>
+                     <p>Funcţiile pot accesa variabilele definite înafara lor.  Variabilele definite în interiorul funcţiilor (variabilele locale) nu pot fi accesate dinafara funcţiilor în care au fost definite.</p>
+                     <p>Funcţiile pot returna diferite tipuri de valori.  De exemplu funcţia următoare returnează o valoare logică (<em>true</em> sau <em>false</em>). </p>
+                     <pre>&lt;script&gt;
+   var anReferinta = 1996;
+   var ionescu = {
+    nume : "Ionescu",
+    prenume: "Paul",
+    anNastere: 1987
+   };
+   document.write("&lt;ul&gt;");
+   function major(pers) {
+      document.write("&lt;li&gt;Persoana este din " + pers.anNastere + "&lt;/li&gt;");
+      document.write("&lt;li&gt;Anul de referinta este " + anReferinta + "&lt;/li&gt;");
+    if(pers.anNastere &lt; anReferinta) {  //  Adevarat daca suntem in 2014!
+        return true;
+    } else {
+        return false;
+    }
+   }
+   document.write("&lt;/ul&gt;");
+   document.write("&lt;p&gt;Ionescu este major? " + major(ionescu) + "!" + "&lt;/p&gt;");
+&lt;/script&gt;</pre>
+                     <p>Observaţie: Apelul <em>document.write(mesaj)</em> provoacă scrierea şirului dat ca argument în pagina Web.  Acesta este unul dintre modurile în care JavaScript permite generarea unui conţinut dinamic al paginii Web.  Constrângerea specifică acestui mod de generare este faptul că scriptul trebuie plasat în poziţia din pagină în care trebuie să apară informaţia generată.</p>
+                     
+					   
+					 
+                    <br><br>
+                    <div align="center" class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="./index_files/rINjnJ_xiyA.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+                    <br>
+					 
+					 
+					 
+					 
+                     <br><a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true" style="font-size:40px;color:rgb(36,64,97);"></span>TOP</a>
+                  </div> <!-- panel body -->
+               </div> <!-- panel  -->
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <a name="if"></a><h3 class="panel-title">Scrierea condiţiilor. Instrucţiunea if</h3>
+                  </div>
+                  <div class="panel-body">
+                     <p>În exemplul precedent s-a folosit în interiorul funcţiei o instrucţiune <em>if</em>.  Aceasta permite luarea unei decizii pe baza valorii unei expresii logice.  Instrucţiunea poate fi scrisă în două feluri, astfel:</p>
+                     <pre>if (expresie) {
+   instrucţiuni pt. adevarat
+}</pre>
+                     <p>sau, ca în funcţia <em>major()</em>:</p>
+                     <pre>if (expresie) {
+   instrucţiuni pt. adevarat
+} else {
+   instructiuni pt. fals
+}</pre>
+                     <p>În cazul testării succesive a mai multor expresii logice se poate folosi repetat forma <em>if else if</em>, ca în exemplul următor:</p>
+                     <pre>if (expresie1) {
+   instrucţiuni pt. adevarat
+} else if (expresie2) {
+   instructiuni pt. adevarat
+} else if (expresie3) {
+   instrucţiuni pt. adevarat
+} else {
+   instructiuni pt. fals
+}</pre>
+                     <p><b>Operatorii relaţionali şi logici ai limbajului JavaScript</b></p>
+                     <p>Limbajul JavaScript este derivat din C, deci preia de la acesta setul de operatori logici şi relaţionali, conform tabelului.</p>
+
+                     <table class="table table-bordered table-striped">
+                        <thead>
+                           <tr><th class="text-center">Operator</th><th class="text-center">Semnificație</th><th class="text-center">Exemplu</th></tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td class="text-center">==</td><td>Egalitate (numere)</td><td class="text-center">x == y</td>
+                           </tr>
+
+                           <tr>
+                              <td class="text-center">===</td><td>Egalitate valori și tipuri de variabile</td><td class="text-center">x === y</td>
+                           </tr>
+
+                           <tr>
+                              <td class="text-center">&gt;</td><td>Operatorul "mai mare"</td><td>&nbsp;</td>
+                           </tr>
+
+                           <tr>
+                              <td class="text-center">&lt;</td><td>Operatorul "mai mic"</td><td>&nbsp;</td>
+                           </tr>
+
+                           <tr>
+                              <td class="text-center">&gt;=</td><td>Operatorul "mai mare sau egal"</td><td>&nbsp;</td>
+                           </tr>
+
+                           <tr>
+                              <td class="text-center">&lt;=</td><td>Operatorul "mai mic sau egal"</td><td>&nbsp;</td>
+                           </tr>
+
+                           <tr>
+                              <td class="text-center">!=</td><td>Operatorul "diferit"</td><td>&nbsp;</td>
+                           </tr>
+
+                           <tr>
+                              <td class="text-center">!==</td><td>Operatorul "diferit"</td><td>&nbsp;</td>
+                           </tr>
+
+                           <tr>
+                              <td class="text-center">||</td><td>Operatorul logic "sau"</td><td>&nbsp;</td>
+                           </tr>
+
+                           <tr>
+                              <td class="text-center">&amp;&amp;</td><td>Operatorul logic "și"</td><td>&nbsp;</td>
+                           </tr>
+
+                           <tr>
+                              <td class="text-center">!</td><td>Operatorul de negare</td><td>&nbsp;</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <p>În JavaScript pentru testarea egalităţii a două valori se va folosi sistematic operatorul '==='.  Acest operator verifică atât identitatea valorilor cât şi a tipurilor valorilor comparate, ca în exemplul următor.</p>
+                     <pre>   var nr = 7;
+   var compar1 = (nr == "7");  //  Adevarat!
+   var compar2 = (nr === "7");   //  Fals.  Tipul nu coincide</pre>
+                     <p>Operatorul '==' este de evitat deoarece înaintea testării, dacă tipurile valorilor comparate nu sunt identice, interpretorul JavaScript va opera conversii de tip, uneori bizare, cu rezultate imprevizibile.</p>
+                     <br><a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true" style="font-size:40px;color:rgb(36,64,97);"></span>TOP</a>
+                  </div> <!-- panel body -->
+               </div> <!-- panel-body  -->
+
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <a name="rep"></a><h3 class="panel-title">Instrucţiuni repetitive</h3>
+                  </div>
+                  <div class="panel-body">
+                     <p>Fiind derivat din limbajul C, JavaScript conţine toate instrucţiunile repetitive ale acestuia, respectiv <em>while</em>, <em>do</em> şi <em>for</em>.  Pe lângă acestea este definită o instrucţiune suplimentară, <em>for/in</em> care permite scrierea eficientă a ciclurilor destinate parcurgerii unui şir de valori.</p>
+                     <br><p><b><em>while</em></b></p>
+                     <p>Instrucţiunea <em>while</em> permite executarea repetată a unui bloc de instrucţiuni, atâta timp cât o condiţie este adevărată.</p>
+                     <p>Sintaxa instrucţiunii este următoarea:</p>
+                     <pre>   while (conditie)
+   {
+       // bloc de instructiuni
+   }</pre>
+                     <p>Exemplu de utilizare:</p>
+                     <pre>var contor = 0;
+var clasaMea = ["Andrei", "Claudiu", "Diana", "Marcel"];
+while(contor &lt; clasaMea.length) {
+   console.log(clasaMea[contor]);
+   contor++;
+}</pre>
+                     <br><p><b><em>for</em></b></p>
+                     <p>Instrucţiunea <em>for</em> permite scrierea compactă a ciclurilor în care este parcurs un şir de valori.  Sintaxa instrucţiunii este următoarea:</p>
+                     <pre>   for (instructiune1; expresie_logica; instructiune2)
+   {
+      // bloc de instructiuni
+   }</pre>
+                     <p>Exemplu de utilizare:</p>
+                     <img src="./index_files/fig1(1).png" alt="" class="img-responsive center-block poza">
+                     
+					 
+					  <br><br>
+                    <div align="center" class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="./index_files/bnOAqJlQi0o.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+                    <br>
+					 
+					 
+					 
+                     <br><p><em><b>for / in, forEach</b></em></p>
+                     <p>Varianta de parcurgere a unui șir prezentată anterior este completată în JavaScript cu alte două variante de parcurgere: <em>for / in</em> și <em>forEach</em>.</p>
+                     <p>Exemple:</p>
+                     <pre>   var sirNume = ["Ionescu", "Popescu", "Martin"];
+
+   // 1. for clasic
+   document.write("&lt;br&gt;1: ");
+   for (var i = 0; i &lt; sirNume.length; i++) {
+      document.write(sirNume[i] + " ");
+   }
+
+   // 2. for / in
+   document.write("&lt;br&gt;2: ");
+   for (var i in sirNume) {
+      document.write(sirNume[i] + " ");
+   }
+
+   // 3. forEach
+   document.write("&lt;br&gt;3: ");
+  sirNume.forEach(function (nume, i) {
+      document.write(nume + " ");
+  });
+
+  // 4. for, parcurgerea campurilor unui obiect
+  document.write("&lt;br&gt;4: &lt;br&gt;");
+   var persoana = {
+      nume:"Ionescu",
+      prenume:"Corina",
+      varsta:25
+   }; 
+
+   var txt = "";
+   for (var x in persoana)
+   {
+      txt = txt + x + ': ' + persoana[x] + '&lt;br&gt;';
+   }
+   document.write(txt);
+                     </pre>
+                     <p>Rezultat:</p>
+                     <img src="./index_files/fig1a(1).png" alt="" class="img-responsive center-block pozaChenar">
+                     <p>În ultimul exemplu sunt parcurse valorile păstrate într-un obiect având trei câmpuri.</p>
+                     <p>Observație: Variabilele declarate în corpul unei funcții folosind <em>var</em> sunt accesibile în tot corpul funcției chiar dacă declararea s-a realizat într-un bloc interior al acesteia. Variabilele declarate înafara oricărei funcții devin automat câmpuri (membri date) ale obiectului <em>window</em>, un obiect aparținând browser-ului.</p>
+                    
+
+										 
+					  <br><br>
+                    <div align="center" class="embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="./index_files/JzWtem4daUY.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+					</div>
+                    <br>
+					 
+					 
+					 
+					 
+                     <br><p><em><b>do</b></em></p>
+                     <p>Instrucţiunea repetitivă <em>do</em> permite repetarea unui bloc de instrucţiuni atâta timp cât o condiţie este adevărată.  Spre deosebire de <em>while</em>, în cazul instrucţiunii <em>do</em> testarea condiţiei se face la sfârşit.  Sintaxa instrucţiunii este următoarea:</p>
+                     <pre>  do {
+      // bloc de instructiuni
+  } while (conditie)</pre>
+                     <br><p><em><b>break</b></em> şi <em><b>continue</b></em></p>
+                     <p>Instrucţiunile <em>break</em> şi <em>continue</em> sunt folosite ca şi în C, la gestionarea ciclurilor.  Astfel <em>break</em> va întrerupe imediat ciclul în care este plasat iar <em>continue</em> va comanda o reluare a acestuia ignorându-se liniile rămase neexecutate din corpul ciclului. </p>
+                     <p>Observație: <em>break</em> şi <em>continue</em> nu pot fi utilizate în cicluri realizate cu <em>for / in</em> sau <em>forEach</em>. </p>
+                     <br><a href="https://infoap.ro/cursuri/courses/IAP32/document/Curs7.html#top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true" style="font-size:40px;color:rgb(36,64,97);"></span>TOP</a>
+                  </div>  <!--  panel-body -->
+               </div>  <!--  panel-default -->
+            </div> <!-- col-sm-9 -->
+         </div>  <!-- row -->
+      </div>  <!-- container -->
+      <script type="text/javascript" src="./index_files/curs.js.download"></script>
+   
+
+</body></html>
